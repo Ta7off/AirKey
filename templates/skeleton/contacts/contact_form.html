@@ -1,16 +1,53 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirKey - Свържете се с нас</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/core/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contacts/contact.css' %}">
 </head>
 <body>
-    <form method="post">
-    {% csrf_token %}
 
-    {{ form.as_p }}
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: rgba(18, 9, 31, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(183, 142, 255, 0.15);">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand fw-bold fs-3 brand-text" href="/">
+            <img src="{% static 'images/48343c16-f898-4047-b121-a2c422211933-removebg-preview.png' %}" height="60">
+        </a>
+        <a class="btn btn-outline-light px-4 fw-semibold" href="/core/home/">Назад</a>
+    </div>
+</nav>
 
-    <button type="submit">Send Message</button>
-</form>
+<section class="container py-5 mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+            <div class="feature-box p-5">
+                <div class="text-center mb-4">
+                    <div class="hero-badge">Контактна форма</div>
+                    <h1 class="display-6 fw-bold text-white">Свържете се с нас</h1>
+                    <p class="text-muted">Изпратете ни съобщение и ще ви отговорим възможно най-скоро.</p>
+                </div>
+
+                <form method="post" class="contact-form">
+                    {% csrf_token %}
+
+                    <div class="django-form-wrapper">
+                        {{ form.as_p }}
+                    </div>
+
+                    <div class="d-grid mt-4">
+                        <button class="btn btn-custom btn-lg py-3 fw-bold" type="submit">
+                            Изпрати съобщение
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>

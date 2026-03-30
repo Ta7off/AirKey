@@ -1,0 +1,46 @@
+/* Styling the Django Form fields */
+.django-form-wrapper p {
+    margin-bottom: 1.5rem;
+}
+
+.django-form-wrapper label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #d6b7ff;
+    font-weight: 500;
+}
+
+.django-form-wrapper input,
+.django-form-wrapper textarea,
+.django-form-wrapper select {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(183, 142, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.django-form-wrapper input:focus,
+.django-form-wrapper textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #a855f7;
+    box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.15);
+}
+
+/* Specific fix for textareas (messages) */
+.django-form-wrapper textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Error styling (if form validation fails) */
+.errorlist {
+    color: #ff4d4d;
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}

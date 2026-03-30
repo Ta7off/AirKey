@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirKey - Отвори вратата с едно движение</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/core/index.css' %}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container d-flex justify-content-end align-items-center p-0 mt-2">
+        <a class="btn btn-custom px-4 fw-semibold shadow-sm" href="/contacts/contact/">Contact Us</a>
+    </div>
+</nav>
+
+<section class="hero-section">
+    <div class="container hero-content">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 text-center text-lg-start">
+                <div class="hero-badge">Интелигентно отключване без ключ</div>
+                <h1 class="display-3 fw-bold mb-3">AirKey</h1>
+                <p class="lead fs-3 mb-4 text-white">Отвори вратата с едно движение.</p>
+                <p class="fs-5 mb-4 opacity-90 text-muted">
+                    Създаваме по-удобен, по-сигурен и по-модерен начин за достъп до домове, сгради и автомобили.
+                </p>
+                <a href="/contacts/contact/" class="btn btn-custom btn-lg px-4 py-3 fw-semibold">
+                    Заявете демо
+                </a>
+            </div>
+
+            <div class="w-400px col-lg-6 text-center" style="margin-top: 0;">
+                <img src="{% static 'images/bmw_gesture_control.gif' %} "
+                     alt="AirKey устройство"
+                     class="hero-image"
+                     style="height: 450px; width: auto;"
+                >
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container py-5 my-4">
+    <div class="row text-center justify-content-center mb-5">
+        <div class="col-lg-8">
+            <h2 class="section-title display-6 mb-3">Нашата визия</h2>
+            <p class="fs-5 text-muted mb-0">
+                Искаме достъпът до домове и сгради да бъде по-бърз, по-сигурен и по-хигиеничен.
+            </p>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="feature-box">
+                <div class="feature-icon text-danger">⚠</div>
+                <h3 class="h4 text-white fw-bold">Проблемът днес</h3>
+                <p class="text-muted mb-3">
+                    Сегашните решения като ключове, карти и чипове са остарели и често неудобни.
+                </p>
+                <ul class="mb-0 text-muted">
+                    <li>Голяма вероятност за загуба</li>
+                    <li>Ниска хигиена</li>
+                    <li>Ежедневно неудобство</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="feature-box">
+                <div class="feature-icon text-success">✓</div>
+                <h3 class="h4 text-white fw-bold">Как работи AirKey</h3>
+                <p class="text-muted mb-3">
+                    Системата използва жестово разпознаване за по-интуитивен достъп.
+                </p>
+                <ul class="mb-0 text-muted">
+                    <li>Сензор засича движението на ръката</li>
+                    <li>Разпознава зададен жест</li>
+                    <li>Активира механизма за отключване</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="soft-section py-5">
+    <div class="container d-flex flex-column align-items-center text-center">
+
+        <div class="col-lg-8 mb-5">
+            <h2 class="section-title display-6 mb-3">Нашият екип</h2>
+            <p class="lead text-muted mb-4">
+                Ние сме екип от млади иноватори, които вярват, че технологиите могат да направят ежедневието по-лесно.
+            </p>
+        </div>
+
+        <div class="row g-4 w-100 justify-content-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-box p-3 text-center h-100">
+                    <img src="{% static 'images/vanko.png' %}" class="team-member-img mb-3 shadow" alt="Иван Тасев">
+                    <h4 class="h5 fw-bold text-white mb-1">Иван Тасев</h4>
+                    <p class="text-muted small mb-0">Дизайнер</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-box p-3 text-center h-100">
+                    <img src="{% static 'images/deni.png' %}" class="team-member-img mb-3 shadow"
+                         alt="Деница Ганчева">
+                    <h4 class="h5 fw-bold text-white mb-1">Деница Ганчева</h4>
+                    <p class="text-muted small mb-0">Мениджър</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-box p-3 text-center h-100">
+                    <img src="{% static 'images/petur.png' %}" class="team-member-img mb-3 shadow" alt="Петър Бухчев">
+                    <h4 class="h5 fw-bold text-white mb-1">Петър Бухчев</h4>
+                    <p class="text-muted small mb-0">Програмист</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-box p-3 text-center h-100">
+                    <img src="{% static 'images/ili.png' %}" class="team-member-img mb-3 shadow"
+                         alt="Илияна Николова">
+                    <h4 class="h5 fw-bold text-white mb-1">Илияна Николова</h4>
+                    <p class="text-muted small mb-0">Търговец</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container py-5">
+    <div class="text-center">
+        <h2 class="section-title display-6 mb-3">Свържете се с нас</h2>
+        <p class="text-muted mb-4">
+            Ако искате да научите повече за AirKey, изпратете ни запитване.
+        </p>
+        <a href="/contacts/contact/" class="btn btn-custom btn-lg px-4 py-3">Към контактната форма</a>
+    </div>
+</section>
+
+</body>
+</html>

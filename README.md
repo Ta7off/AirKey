@@ -29,23 +29,30 @@ AirKey is an innovative smart access system that provides keyless entry using ge
 
 1. **Clone the repository** and navigate to the project root:
    ```bash
-   cd AirKey
+   cd AirKey-main
    ```
 
 2. **Create and activate a virtual environment**:
+
+   **On Windows (Command Prompt / PowerShell)**:
+   ```powershell
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+   
+   **On macOS / Linux**:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate
    ```
 
 3. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
-   *(Note: Ensure requirements are exported if not already present)*
 
 4. **Environment Variables**:
-   Create a `.env` file in the same directory as `manage.py` containing your configuration:
+   Create a new file named `.env` in the same directory as `manage.py`, open it in a text editor, and paste the following inside it:
    ```env
    DEBUG=True
    SECRET_KEY=your_secret_key_here

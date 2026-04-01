@@ -29,7 +29,7 @@ AirKey is an innovative smart access system that provides keyless entry using ge
 
 1. **Clone the repository** and navigate to the project root:
    ```bash
-   cd AirKey-main
+   cd AirKey
    ```
 
 2. **Create and activate a virtual environment**:
